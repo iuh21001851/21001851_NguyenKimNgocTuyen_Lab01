@@ -1,4 +1,4 @@
-//Bai 9: Calculate the sum of numbers in an array of numbers
+//Bai 11: Calculate the average of the numbers in an array of numbers
 var htmlBai = document.querySelector('#bai');
 var btn = document.querySelector('#tinh');
 btn.onclick=function(){
