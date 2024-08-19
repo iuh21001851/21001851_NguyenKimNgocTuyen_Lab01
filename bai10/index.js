@@ -1,4 +1,4 @@
-//Bai 9: Create a function that will convert from Fahrenheit to Celsius 
+//Bai 9: Calculate the sum of numbers in an array of numbers
 var htmlBai = document.querySelector('#bai');
 var btn = document.querySelector('#tinh');
 btn.onclick=function(){
