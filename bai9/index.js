@@ -1,4 +1,4 @@
-//Bai 8: Create a function that will convert from Celsius to Fahrenheit 
+//Bai 9: Create a function that will convert from Fahrenheit to Celsius 
 var htmlBai = document.querySelector('#bai');
 var btn = document.querySelector('#chuyen');
 btn.onclick=function(){
