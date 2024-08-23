@@ -1,22 +1,18 @@
-//Bai 22: Reverse an array
+//Bai 21: Rotate an array to the right 1 position 
 var htmlBai = document.querySelector('#bai');
 var btn = document.querySelector('#ketqua');
-function reverse(arr){
+function rotateRight(arr){
     if(arr.length===0) return arr;
-    var left=0, right=arr.length-1;
-    while(left<=right){
-        var tmp=arr[left];
-        arr[left]=arr[right];
-        arr[right]=tmp;
-        left++; right--;
-    }
+    var s= arr[arr.length-1];
+    for(i=arr.length-1;i>0; i-=1) arr[i]=arr[i-1];
+    arr[0]=s;
     return arr;
 }
 btn.onclick=function(){
     var htmlInput = document.querySelector('input[name="mang"]').value.split(';').map(Number)
     
     
-   document.querySelector('input[name="kq"]').value=reverse(htmlInput).join(';');
+   document.querySelector('input[name="kq"]').value=rotateRight(htmlInput).join(';');
 }
 
 
